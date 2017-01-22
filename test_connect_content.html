@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+  Licensed Materials - Property of IBM
+  (c) Copyright IBM Corporation 2005, 2015. All Rights Reserved.
+  
+  Note to U.S. Government Users Restricted Rights:
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+-->
+
+<html >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=10">
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="/qm/web/_style/?include=B~&etag=aunbYrL1Zl_en_US&_proxyURL=%2Fqm&ss=KFDx3">
+<link rel="shortcut icon" href="/qm/web/net.jazz.ajax/jazz.ico">
+
+<style type="text/css">
+#net-jazz-ajax-NoScriptMessage {
+	width: 100%;
+	color: #D0D0D0;
+	font-size: 2em;
+	text-align: center;
+	position: absolute;
+	top: 1%;
+	z-index: 999;
+}
+</style>
+
+</head>
+
+<body class="claro">
+	<noscript><div id="net-jazz-ajax-NoScriptMessage">Javascript is either disabled or not available in your Browser</div></noscript>
+	<div id="net-jazz-ajax-InitialLoadMessage">Loading...</div>
+	<div id="net-jazz-ajax-WorkbenchRoot"></div>
+	
+	<script type="text/javascript">
+		djConfig = {
+			isDebug: false,
+			usePlainJson: true,
+			baseUrl: "/qm/web/dojo/",
+			locale: "en-us",
+			localizationComplete: true
+		};
+		/*null*/
+		net = {jazz: {ajax: {}}};
+		net.jazz.ajax._contextRoot = "/qm";
+		net.jazz.ajax._appPath = "/qm/auth/authrequired";
+		net.jazz.ajax._webuiPrefix = "/web/";
+	</script>
+	
+	<script type="text/javascript" src="/qm/web/_js/?include=B~&etag=aunbYrL1Zl_en_US&_proxyURL=%2Fqm&ss=KFDx3&locale=en-us"></script>
+
+<script type="text/javascript">
+require("dojo/main").getObject('jazz.core.loader', true)._serverStartup="KFDx3";
+require("dojo/main").getObject('jazz.core.loader',true)._loaded=["B"];
+</script>
+
+	
+	<script type="text/javascript">
+	/* <![CDATA[ */
+		dojo.addOnLoad( function() {
+			net.jazz.ajax.ui.PlatformUI.createAndRunWorkbench("net.jazz.web.app.authrequired");
+		});
+	/* ]]> */
+	</script>
+</body>
+</html>
