@@ -1,9 +1,10 @@
 import requests
 from pprint import pprint
 
-qm_context_root = "/qm"
 clm_public_uri = "https://rqm.intersane.xyz:9443"
-api_integration_root = "/service/com.ibm.rqm.integration.service.IIntegrationService"
+qm_context_root = "/qm"
+api_integration_root = \
+    "/service/com.ibm.rqm.integration.service.IIntegrationService"
 #
 # Just ask for a list of projects
 #
